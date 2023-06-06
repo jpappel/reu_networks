@@ -1,4 +1,6 @@
 import networkx as nx
+from networkx import is_planar # add to namespace
+from typing import Callable
 
 def circumference(g: nx.Graph) -> int:
     """
