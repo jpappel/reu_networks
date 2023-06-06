@@ -11,8 +11,8 @@ Work on this project was done for [NSF REU Summer 2023 at Moravian University](h
 Linux and MacOs
 
 ```bash
-git clone <url>
-cd <repo name>
+git clone https://github.com/jpappel/reu_networks
+cd reu_networks
 pip3 install -r requirements.txt
 ```
 
