@@ -1,12 +1,19 @@
+"""
+Properties for Network Connectivity
+
+functions:
+    circumference
+    has_l_circ
+"""
+from typing import Callable
 import networkx as nx
 from networkx import is_planar # add to namespace
-from typing import Callable
 
 def circumference(g: nx.Graph) -> int:
     """
     Compute the cicumference of a graph, 0 if acyclic
     """
-    cycles = list(nx.cycles.simple_cycles(g))
+    cycles = list(nx.algorithms.cycles.simple_cycles(g))
     cycle_sizes = sorted(cycles, key = lambda s : len(s))
     return len(cycle_sizes[-1]) if len(cycle_sizes) else 0
 
