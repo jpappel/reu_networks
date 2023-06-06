@@ -20,4 +20,4 @@ def has_l_circ(l: int) -> Callable:
     """
     Anonymous function generator for _has_l_circ
     """
-    return lambda g : has_l_circ(g, l)
+    return lambda g : _has_l_circ(g, l)
